@@ -8,11 +8,16 @@
     <meta name="description"
         content="WDD 230 - Web Frontend Development. Jacob Canyon. Course assignment portal. Student project. BYU Pathways.">
     <meta name="author" content="Jacob Canyon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
 </head>
 
 <body>
     <header>
-        <img src="images/rsz_2inmyoffice.jpg" alt="profile image"><span>Jacob Canyon</span>
+        <img src="images/rsz_2inmyoffice.jpg" alt="profile image"><span id="headerName">Jacob Canyon</span>
     </header>
     <nav>
         <a href="#">Home</a>
@@ -21,10 +26,10 @@
         <a href="#">Form</a>
     </nav>
     <main>
-        <h1>WDD 230:Web Frontend Development</h1>
+        <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learing Activities</h2>
-            <ul>
+            <ul id="activities">
                 <li><span>Week 1:</span> <a href="#">activity</a></li>
                 <li><span>Week 2:</span> <a href="#">activity</a></li>
                 <li><span>Week 3:</span> <a href="#">activity</a></li>
@@ -36,9 +41,10 @@
         </section>
     </main>
     <footer>
-        <p>&copy<span id="year"></span> Jacob Canyon Arizona</p>
+        <p>&copy;<span id="year"></span> Jacob Canyon Arizona</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getDates.js"></script>
 
 </body>
 

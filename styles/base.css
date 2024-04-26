@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css2);
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+body {
+    grid-template-columns: auto 1fr auto/auto 1fr auto;
+    display: grid;
+
+}
+
+header span {
+    font-size: 3rem;
+    padding: 1rem;
+
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    justify-content: center;
+}
+
+header img {
+    padding: 2rem;
+}
+
+nav {
+
+    background-color: aquamarine;
+    margin: 0;
+    font-size: 2rem;
+    justify-content: flex-start;
+
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: beige;
+
+}
+
+main {
+    justify-content: center;
+    display: grid;
+}
+
+h2 {
+    color: white;
+    background-color: cadetblue;
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: antiquewhite;
+    text-align: center;
+}
