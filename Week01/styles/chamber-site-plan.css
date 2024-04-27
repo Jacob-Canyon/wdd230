@@ -1,0 +1,84 @@
+/*https://coolors.co/a57548-fcd7ad-f6c28b-5296a5-82ddf0*/
+
+/* CSS HEX
+--chamoisee: #a57548ff;
+--light-orange: #fcd7adff;
+--peach: #f6c28bff;
+--blue-munsell: #5296a5ff;
+--non-photo-blue: #82ddf0ff;
+
+#a57548, #fcd7ad, #f6c28b, #5296a5, #82ddf0
+*/
+
+:root {
+    --primary-color: #5296a5;
+    --secondary-color: #a57548;
+    --accent1-color: #82ddf0;
+    --accent2-color: #fcd7ad;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+body {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: #5296a5;
+    padding: 1rem;
+
+}
+
+
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 2rem;
+}
+
+footer {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    font-family: "Tilillium Web", sans-serif;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+    font-family: "Arimo", sans-serif;
+}
+
+p,
+ul {
+    font-family: "Tilillium Web", sans-serif;
+}
+
+.images {
+    border: 2px solid black;
+}
+
+
+#font1 {
+    font-family: "Arimo", sans-serif;
+}
+
+#font2 {
+    font-family: "Titillium Web", sans-serif;
+}
