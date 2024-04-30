@@ -11,4 +11,16 @@
         display: grid;
         grid-template: auto 1fr auto / auto 1fr auto;
     }
+
+    .join-button {
+        display: block;
+        height: 4rem;
+        width: 6rem;
+        border-radius: 10%;
+        background-color: var(--accent1-color);
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        z-index: 1;
+    }
 }
