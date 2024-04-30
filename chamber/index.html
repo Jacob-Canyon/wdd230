@@ -10,32 +10,73 @@
     <meta name="author" content="Jacob Canyon">
     <meta property="og:title" content="Tempe Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/TempeSkyline.jpg">
+    <meta property="og:image" content="images/rsz_tempe-hero.jpg">
     <meta property="og:url" content="">
     <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
 
 </head>
 
 <body>
-
-    <head>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Discover</a>
-            <a href="#">Directory</a>
-            <a href="#">Join</a>
-        </nav>
+    <div class="parent">
+        <header>
+            <nav>
+                <img class="logo" src="" alt="logo">
+                <a href="#">Home</a>
+                <a href="#">Discover</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+            </nav>
+            <div class="hero-container">
+                <h1>Tempe Chamber of Commerce</h1>
+                <img class="hero-image" src="images/rsz_tempe-hero.jpg" alt="hero image">
+                <button class="join-button">Join</button>
+            </div>
         </header>
 
+        <div class="left-side">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Spam Slam</li>
+                <li>Summer Family Fun Day</li>
+                <li>Commnunity Clean Up</li>
+                <li>Bunch Fundrasier</li>
+            </ul>
+        </div>
+
+
         <main>
-            <img src="images/TempeSkyline.jpg" alt="hero image">
-            <section id="events"></section>
-            <section id="weather"></section>
-            <button>Joing</button>
+            <section>
+                <h2>Weclome to Tempe!</h2>
+                <p>This is just student project</p>
+            </section>
+
+
 
         </main>
-        <footer></footer>
 
+        <div class="right-side">
+            <h2>Weather</h2>
+            <p>this is just a place holder</p>
+        </div>
+        <div class="right-side">
+            <h2>spotlight adverts</h2>
+        </div>
+
+        <footer>
+
+            <p>&copy;2024 Jacob Canyon <span id="lastModified"></span></p>
+            <p>This is just a student project</p>
+
+        </footer>
+    </div>
+    <script src="scripts/chamber.js"></script>
 </body>
 
 </html>

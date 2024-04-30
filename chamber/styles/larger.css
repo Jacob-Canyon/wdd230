@@ -1,0 +1,14 @@
+@media (min-width: 640px) {
+
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+    }
+
+    .parent {
+        display: grid;
+        grid-template: auto 1fr auto / auto 1fr auto;
+    }
+}

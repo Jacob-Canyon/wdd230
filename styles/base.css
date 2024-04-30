@@ -71,12 +71,15 @@ h1 {
 }
 
 h2 {
-    color: white;
+    color: black;
     background-color: cadetblue;
     padding: 1rem;
     margin: 1rem;
     font-size: 2rem;
 }
+
+h1,
+h2 {}
 
 .card {
     border: 3px solid black;

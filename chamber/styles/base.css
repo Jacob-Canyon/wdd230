@@ -3,4 +3,110 @@
     --secondary-color: #a57548;
     --accent1-color: #82ddf0;
     --accent2-color: #fcd7ad;
+    --larger-font: 'Tilillium Web', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    display: block;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+.logo {
+    height: 150px;
+}
+
+
+header {
+    background-color: var(--primary-color);
+    width: 100vw;
+    grid-column: 1/4;
+    justify-items: center;
+
+}
+
+.hero-container {
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    z-index: 0;
+    text-align: center;
+
+}
+
+.hero-image {
+    width: 100%;
+}
+
+
+.left-side {
+    margin: 1rem;
+    padding: 2rem;
+    grid-column: 1 / 2;
+    border: 1px solid var(--secondary-color);
+}
+
+main {
+    margin: 1rem;
+    padding: 2rem;
+    grid-column: 2 / 3;
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+}
+
+.right-side {
+    margin: 1rem;
+    padding: 2rem;
+    grid-column: 3 / 4;
+    border: 1px solid var(--secondary-color);
+}
+
+h2 {
+    padding: 1rem;
+    background-color: var(--accent2-color);
+}
+
+h1,
+h2 {
+    font-family: var(--larger-font);
+}
+
+li {
+    padding: 1rem;
+}
+
+nav a {
+    font-family: "Tilillium Web", sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+nav a:hover {
+    background-color: var(--accent1-color);
+}
+
+.join-button {
+    background-color: var(--accent1-color);
+}
+
+
+footer {
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--accent2-color);
+    justify-content: center;
+    text-align: center;
+    grid-column: 1/4;
 }
