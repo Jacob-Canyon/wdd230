@@ -23,4 +23,16 @@
         top: 20%;
         z-index: 1;
     }
+
+    ul.menuLinks {
+        display: block;
+    }
+
+    ul.menuLinks.open {
+        display: contents;
+    }
+
+    #hamButton {
+        display: none;
+    }
 }

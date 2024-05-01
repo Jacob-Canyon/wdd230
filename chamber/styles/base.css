@@ -63,6 +63,22 @@ header {
     border: 1px solid var(--secondary-color);
 }
 
+#hamButton {
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    width: 4rem;
+    margin-top: 1rem;
+}
+
+ul.menuLinks {
+    display: none;
+}
+
+ul.menuLinks.open {
+    display: block;
+}
+
 main {
     margin: 1rem;
     padding: 2rem;
