@@ -22,18 +22,18 @@
 
     #hero-text {
         position: absolute;
-        right: 60%;
+        left: 30px;
         top: 20%;
         width: fit-content;
         color: white;
-        z-index: 1;
-        font-size: 2rem;
+        font-size: 3rem;
 
     }
 
     .hero img {
         width: 100%;
         height: auto;
+        display: block;
     }
 
 
