@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <img src="images/rsz_2inmyoffice.jpg" alt="profile image"><span id="headerName">Jacob Canyon</span>
+        <img src="images/rsz_2inmyoffice.webp" alt="profile image"><span id="headerName">Jacob Canyon</span>
         <div id="mode">
             🕶️
         </div>
@@ -36,6 +36,19 @@
         <a href="#">Form</a>
     </nav>
     <main>
+
+        <div class="hero">
+
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/albuquerque-temple-small.webp">
+                <source media="(max-width: 960px)" srcset="images\albuquerque-temple.webp">
+                <img src="images/albuquerque-temple.webp" alt="Albuquerque Temple">
+            </picture>
+            <div id="hero-text">
+                <p>Albuquerque New Mexico Temple</p>
+            </div>
+        </div>
+
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learing Activities</h2>
@@ -47,7 +60,7 @@
                 </li>
                 <li><span>Week 3:</span> <a href="week03/images/resized_image.webp">Image Format</a> | <a
                         href="week03/lazyload.html">Lazy Load</a> | <a href="week03/responsive-image.html">Responsive
-                        Image</a> </li>
+                        Image</a> | <a href="week03/bom.html">BOM Enhanced</a></li>
                 <li><span>Week 4:</span> <a href="#">activity</a></li>
                 <li><span>Week 5:</span> <a href="#">activity</a></li>
                 <li><span>Week 6:</span> <a href="#">activity</a></li>
@@ -57,10 +70,18 @@
         <section class="card">
             <h2>Information</h2>
         </section>
+        <di class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106598.2865694897!2d-112.01050276197144!3d33.39203850358236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0898a6aa80e3%3A0xa2dd4aad392cb41f!2sTempe%2C%20AZ!5e0!3m2!1sen!2sus!4v1715215427789!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </di>
     </main>
+
     <footer>
         <p>&copy;<span id="year"></span> Jacob Canyon Arizona</p>
-        <p id="lastModified"></p>
+        <p id="lastModified"></p><span class="label">Number of Visits: </span><span class="visits"></span>
+
     </footer>
 
     <script src="scripts/getDates.js"></script>
