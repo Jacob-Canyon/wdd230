@@ -19,20 +19,21 @@
         border-radius: 10%;
         background-color: var(--accent1-color);
         position: absolute;
-        left: 50%;
+        left: 47%;
         top: 20%;
         z-index: 1;
     }
 
-    ul.menuLinks {
-        display: block;
+    nav.menuLinks {
+        display: flex;
     }
 
-    ul.menuLinks.open {
-        display: contents;
-    }
 
     #hamButton {
         display: none;
+    }
+
+    header {
+        display: block;
     }
 }

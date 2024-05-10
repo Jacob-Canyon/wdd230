@@ -71,11 +71,11 @@ header {
     margin-top: 1rem;
 }
 
-ul.menuLinks {
+nav.menuLinks {
     display: none;
 }
 
-ul.menuLinks.open {
+nav.menuLinks.open {
     display: block;
 }
 
@@ -119,7 +119,6 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     font-size: 2rem;
-    columns: black;
     display: block;
     text-align: center;
     flex: 1 1 auto;
