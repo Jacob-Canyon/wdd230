@@ -37,5 +37,18 @@
         display: block;
     }
 
+    /* Dicover page*/
+
+
+
+    .sidebar {
+        grid-column: 1/2;
+        margin: 1rem;
+        padding: 2rem;
+        grid-column: 1 / 2;
+        border: 1px solid var(--secondary-color);
+        width: 100%;
+    }
+
 
 }

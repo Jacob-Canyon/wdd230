@@ -71,6 +71,12 @@ header {
     margin-top: 1rem;
 }
 
+a {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
 a:active {
     color: black;
     font-family: var(--larger-font);
@@ -149,4 +155,15 @@ footer {
     justify-content: center;
     text-align: center;
     grid-column: 1/4;
+}
+
+/* discover page */
+
+
+.sidebar {
+    grid-column: 1/2;
+    padding: 2rem;
+    grid-column: 1 / 2;
+    border: 1px solid var(--secondary-color);
+    width: 100%;
 }
