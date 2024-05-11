@@ -78,12 +78,13 @@ a {
 }
 
 a:active {
-    color: black;
+    color: white;
     font-family: var(--larger-font);
+
 }
 
 a:visited {
-    color: black;
+    color: white;
 }
 
 nav.menuLinks {
@@ -141,6 +142,7 @@ nav a {
 
 nav a:hover {
     background-color: var(--accent1-color);
+    font: black;
 }
 
 .join-button {
