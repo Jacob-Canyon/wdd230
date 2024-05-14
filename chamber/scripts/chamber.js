@@ -29,6 +29,7 @@ function displayDaysSinceLastVisit() {
 
     if (!lastVisit) {
         visitsDisplay.innerText = "Welcome! Let us know if you have any questions."
+        setLastVist();
         return;
     }
 
