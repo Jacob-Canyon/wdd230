@@ -47,7 +47,9 @@ function displayDaysSinceLastVisit() {
         if (differenceInDays == 1) {
             visitsDisplay.innerText = `You last visited ${differenceInDays} day ago.`
         }
+
     }
 
-    localStorage.setItem("lastVisit", JSON.stringify(new Date()));
 }
+
+localStorage.setItem("lastVisit", JSON.stringify(new Date()));
