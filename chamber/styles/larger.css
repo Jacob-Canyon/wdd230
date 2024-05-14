@@ -28,6 +28,10 @@
         display: flex;
     }
 
+    nav.menuLinks.open {
+        display: flex;
+    }
+
 
     #hamButton {
         display: none;
