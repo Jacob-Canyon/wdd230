@@ -47,12 +47,12 @@
 
     .sidebar {
         top: 0;
-        margin-top: 10%;
+        margin-top: 14%;
         grid-column: 1/2;
         width: 300px;
         height: 100%;
         float: right;
-        position: fixed;
+        position: sticky;
     }
 
     .sidebar-content {
