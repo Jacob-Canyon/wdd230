@@ -17,6 +17,11 @@ hamButton.addEventListener('click', () => {
 
 /* Days since last visit */
 
+
+function setLastVist() {
+    window.localStorage.setItem("lastVisit", JSON.stringify(new Date()));
+}
+
 function displayDaysSinceLastVisit() {
     let lastVisit = Date.parse(JSON.parse(window.localStorage.getItem("lastVisit")));
 
@@ -40,16 +45,19 @@ function displayDaysSinceLastVisit() {
             visitsDisplay.innerText = visitsDisplay.innerText = `You last visited ${differenceInDays} days ago.`
         }
 
+        if (differenceInDays == 1) {
+            visitsDisplay.innerText = `You last visited ${differenceInDays} day ago.`
+
+        }
+
         if (differenceInDays == 0) {
             visitsDisplay.innerText = "Back so soon! Awesome!"
         }
 
-        if (differenceInDays == 1) {
-            visitsDisplay.innerText = `You last visited ${differenceInDays} day ago.`
-        }
+
 
     }
 
+
 }
 
-localStorage.setItem("lastVisit", JSON.stringify(new Date()));
