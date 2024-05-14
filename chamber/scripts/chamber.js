@@ -33,6 +33,8 @@ function displayDaysSinceLastVisit() {
 
         const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
 
+        console.log(differenceInDays);
+
 
         if (differenceInDays > 1) {
             visitsDisplay.innerText = visitsDisplay.innerText = `You last visited ${differenceInDays} days ago.`
@@ -48,5 +50,5 @@ function displayDaysSinceLastVisit() {
     }
 
     let currentDate = JSON.stringify(new Date());
-    localStorage.setItem("lastVisit", currentDate);
+    window.localStorage.setItem("lastVisit", currentDate);
 }
