@@ -54,7 +54,7 @@ function displayDaysSinceLastVisit() {
         visitsDisplay.innerText = "Back so soon! Awesome!"
     }
 
-    if (differenceInDays == 1) {
+    if (differenceInDays <= 1) {
         visitsDisplay.innerText = `You last visited ${differenceInDays} day ago.`
     }
 
