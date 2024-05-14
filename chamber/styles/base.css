@@ -68,7 +68,7 @@ header {
     background-color: var(--primary-color);
     cursor: pointer;
     width: 4rem;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 a {
@@ -94,6 +94,11 @@ nav.menuLinks {
 
 nav.menuLinks.open {
     display: block;
+}
+
+nav {
+    height: auto;
+    padding: 1rem;
 }
 
 main {
