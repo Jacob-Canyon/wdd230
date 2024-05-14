@@ -16,7 +16,7 @@ function getLastVisit() {
 }
 
 function setLastVist() {
-    localStorage.setItem("lastVisit", JSON.stringify(new Date()));
+    window.localStorage.setItem("lastVisit", JSON.stringify(new Date()));
 }
 
 /* Days since last visit */
@@ -25,7 +25,7 @@ function setLastVist() {
 function displayDaysSinceLastVisit() {
 
     const visitsDisplay = document.querySelector('.daysSinceLastVisit');
-    const lastVisit = localStorage.getItem("lastVisit");
+    const lastVisit = window.localStorage.getItem("lastVisit");
 
     if (!lastVisit) {
         visitsDisplay.innerText = "Welcome! Let us know if you have any questions."
