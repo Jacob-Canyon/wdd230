@@ -166,7 +166,5 @@ footer {
 .sidebar {
     grid-column: 1/2;
     padding: 2rem;
-    grid-column: 1 / 2;
-    border: 1px solid var(--secondary-color);
     width: 100%;
 }
