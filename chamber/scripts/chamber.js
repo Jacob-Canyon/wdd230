@@ -11,60 +11,42 @@ hamButton.addEventListener('click', () => {
 });
 
 
-function getLastVisit() {
-    return Date.parse(JSON.parse(localStorage.getItem("lastVisit")));
-}
 
-function setLastVist() {
 
-}
+
 
 /* Days since last visit */
 
-
 function displayDaysSinceLastVisit() {
+    let lastVisit = Date.parse(JSON.parse(window.localStorage.getItem("lastVisit")));
 
     const visitsDisplay = document.querySelector('.daysSinceLastVisit');
-    const lastVisit = window.localStorage.getItem("lastVisit");
 
     if (!lastVisit) {
         visitsDisplay.innerText = "Welcome! Let us know if you have any questions."
         return;
     }
 
-    const lastVisitDate = getLastVisit();
+    else {
 
-    console.log(lastVisitDate)
+        const difference = (new Date() - lastVisit);
 
-    if (!lastVisit) {
-        return;
+        const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+
+        if (differenceInDays > 1) {
+            visitsDisplay.innerText = visitsDisplay.innerText = `You last visited ${differenceInDays} days ago.`
+        }
+
+        if (differenceInDays == 0) {
+            visitsDisplay.innerText = "Back so soon! Awesome!"
+        }
+
+        if (differenceInDays == 1) {
+            visitsDisplay.innerText = `You last visited ${differenceInDays} day ago.`
+        }
     }
 
-    const currentDate = new Date();
-
-    console.log(currentDate);
-
-    const difference = currentDate - lastVisitDate;
-
-    const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
-    console.log(differenceInDays);
-
-    visitsDisplay.innerText = differenceInDays;
-
-    if (differenceInDays > 1) {
-        visitsDisplay.innerText = visitsDisplay.innerText = `You last visited ${differenceInDays} days ago.`
-    }
-
-    if (differenceInDays == 0) {
-        visitsDisplay.innerText = "Back so soon! Awesome!"
-    }
-
-    if (differenceInDays == 1) {
-        visitsDisplay.innerText = `You last visited ${differenceInDays} day ago.`
-    }
-
-
+    let currentDate = JSON.stringify(new Date());
+    localStorage.setItem("lastVisit", currentDate);
 }
-
-let currentDate = JSON.stringify(new Date());
-window.localStorage.setItem("lastVisit", currentDate);
