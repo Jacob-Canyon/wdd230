@@ -42,13 +42,12 @@
 
 
     .sidebar {
-        top: 17%;
         grid-column: 1/2;
         grid-column: 1 / 2;
         width: 400px;
         height: 100%;
-        position: fixed;
         float: right;
+        position: fixed;
     }
 
     .sidebar-content {
