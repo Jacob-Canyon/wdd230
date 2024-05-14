@@ -45,22 +45,25 @@ function displayDaysSinceLastVisit() {
     console.log(currentDate);
 
     const difference = currentDate - lastVisitDate;
-    console.log(difference);
+
     const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
+    console.log(differenceInDays);
 
     visitsDisplay.innerText = differenceInDays;
 
-    if (differenceInDays < 1) {
+    if (differenceInDays > 1) {
+        visitsDisplay.innerText = visitsDisplay.innerText = `You last visited ${differenceInDays} days ago.`
+    }
+
+    if (differenceInDays == 0) {
         visitsDisplay.innerText = "Back so soon! Awesome!"
     }
 
-    if (differenceInDays <= 1) {
+    if (differenceInDays == 1) {
         visitsDisplay.innerText = `You last visited ${differenceInDays} day ago.`
     }
 
-    if (difference > 2) {
-        visitsDisplay.innerText = `You last visited ${differenceInDays} days ago.`
-    }
+
 
     setLastVist();
 
