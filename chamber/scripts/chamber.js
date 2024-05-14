@@ -16,7 +16,7 @@ function getLastVisit() {
 }
 
 function setLastVist() {
-    window.localStorage.setItem("lastVisit", JSON.stringify(new Date()));
+
 }
 
 /* Days since last visit */
@@ -64,8 +64,7 @@ function displayDaysSinceLastVisit() {
     }
 
 
-
-    setLastVist();
-
-
 }
+
+let currentDate = JSON.stringify(new Date());
+window.localStorage.setItem("lastVisit", currentDate);
