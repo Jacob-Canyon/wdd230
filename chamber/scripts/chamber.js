@@ -44,15 +44,18 @@ function displayDaysSinceLastVisit() {
 
         if (differenceInDays > 1) {
             visitsDisplay.innerText = visitsDisplay.innerText = `You last visited ${differenceInDays} days ago.`
+            setLastVist();
         }
 
         if (differenceInDays == 1) {
             visitsDisplay.innerText = `You last visited ${differenceInDays} day ago.`
+            setLastVist();
 
         }
 
         if (differenceInDays == 0) {
             visitsDisplay.innerText = "Back so soon! Awesome!"
+            setLastVist();
         }
 
 
