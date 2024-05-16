@@ -172,3 +172,11 @@ footer {
     padding: 2rem;
     width: 100%;
 }
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 340px;
+}
+
+/*--------join page------------*/

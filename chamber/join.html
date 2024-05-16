@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+
+    <meta name="description" content="Tempe Chamber of Commerce, BYU Pathways student project">
+    <meta name="author" content="Jacob Canyon">
+    <meta property="og:title" content="Tempe Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://photos.app.goo.gl/GSgB1cskfqfUfPs58">
+    <meta property="og:url" content="https://jacob-canyon.github.io/wdd230/chamber/index.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+
+</head>
+
+<body>
+    <div class="parent">
+        <header>
+            <button id="hamButton">&#9776;</button>
+            <nav class="menuLinks">
+
+                <a href="https://jacob-canyon.github.io/wdd230/chamber/index.html">Home</a>
+                <a href="https://jacob-canyon.github.io/wdd230/chamber/discover.html">Discover</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+            </nav>
+
+        </header>
+
+
+        <main>
+            <form method="get" action="thank.html">
+                <fieldset>
+                    <legend>Application Information</legend>
+                    <label>First Name*<input type="text" name="fname" id="fname"></label>
+                    <label>Last Name*<input type="text" name="lname" id="lname" required></label>
+                    <label>Title or position<input type="text" name="title" id="title"></label>
+                    <label>Email<input type="email" name="email" id="email"></label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Membership</legend>
+                    <label>NP Membership<input type="radio" name="membership" id="npmember"></label>
+                    <label>NP Membership<input type="radio" name="membership" id="npmember"></label>
+                    <label>NP Membership<input type="radio" name="membership" id="npmember"></label>
+                </fieldset>
+                <fieldset>
+                    <input type="hidden" name="timestamp" value="12-26-2024">
+                </fieldset>
+
+                <input type="submit" value="join">
+            </form>
+
+
+        </main>
+
+        <footer>
+
+            <p>&copy;2024 Jacob Canyon WDD230 <span id="lastModified"></span></p>
+            <p>Contact Us fakeemail@googel.com</p>
+            <p>This is just a student project</p>
+
+        </footer>
+    </div>
+    <script src="scripts/chamber.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Canyon - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development. Jacob Canyon. Course assignment portal. Student project. BYU Pathways.">
+    <meta name="author" content="Jacob Canyon">
+    <meta property="og:title" content="WDD230 Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jacob-canyon.github.io/wdd230/">
+    <meta property="og:image" content="https://photos.app.goo.gl/GSgB1cskfqfUfPs58">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/rsz_2inmyoffice.webp" alt="profile image"><span id="headerName">Jacob Canyon</span>
+        <div id="mode">
+            🕶️
+        </div>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="https://jacob-canyon.github.io/wdd230/">Home</a>
+        <a href="https://jacob-canyon.github.io/wdd230/chamber/index.html">Chamber</a>
+        <a href="https://jacob-canyon.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a>
+        <a href="form.html">Form</a>
+    </nav>
+    <main class="formMain">
+        <form class="form">
+            <fieldset>
+                <label>Username<input type="text" id="username" name="username" required=""></label>
+                <label>Password <input type="password" id="password" name="password" pattern="([A-z0-9À-ž\s]).{8,}"
+                        required=""></label>
+                <label>Confirm Password <input type="password" id="password2" name="password2" required=""></label>
+                <div id="feedback"></div>
+                <label>Email<input type="email" id="email" name="email" required=""
+                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" or="" [a-za-z0-9._%+\-]+@byui\.edu=""
+                        title="Please enter a valid email address"></label>
+            </fieldset>
+
+            <fieldset>
+
+                <label for="r">Page Rating</label><input type="range" id="r" name="r" min="1" max="10" value="1"
+                    step="1" list="rangevalues">
+                <div id="rangevalue">1</div>
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+
+            </fieldset>
+
+            <input type="submit" value="New User">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> Jacob Canyon Arizona</p>
+        <p id="lastModified"></p><span class="label">Number of Visits: </span><span class="visits"></span>
+
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/form.js"></script>
+
+</body>
+
+</html>

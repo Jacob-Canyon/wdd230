@@ -1,0 +1,59 @@
+:root {
+    --border: thin solid black;
+    --larger-font: Roboto, Arial, sans-serif;
+    --smaller-font: "Arimo", sans-serif;
+}
+
+
+.formMain {
+    display: block;
+}
+
+.form {
+    font-family: var(--smaller-font);
+    display: block;
+    align-content: center;
+    padding: 2rem;
+}
+
+.form label {
+    font-size: var(--smaller-font);
+    display: block;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.form fieldset {
+    padding: .5rem 2%;
+}
+
+.form input:required {
+    border-bottom: solid 4px red;
+}
+
+.form input:valid {
+    border-bottom: solid 4px green;
+}
+
+#feedback {
+    color: red;
+    font-size: large;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"] {
+    display: block;
+    padding: .5em;
+    width: 100%;
+    max-width: 300px;
+    background-color: #eee;
+    border-radius: 6px;
+
+}
+
+.form input[type="submit"] {
+    font: var(--larger-font);
+    border-radius: 6px;
+    margin-left: 4rem;
+}
