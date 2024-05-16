@@ -4,6 +4,17 @@
     --smaller-font: "Arimo", sans-serif;
 }
 
+#r {
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 44px;
+}
+
+fieldset {
+    margin-left: 3rem;
+}
+
 
 .formMain {
     display: block;
@@ -20,11 +31,12 @@
     font-size: var(--smaller-font);
     display: block;
     margin-top: 1rem;
-    margin-left: 2rem;
 }
 
 .form fieldset {
     padding: .5rem 2%;
+    width: 100%;
+    max-width: 500px;
 }
 
 .form input:required {
@@ -52,8 +64,37 @@
 
 }
 
+
+.form input[type="email"] {
+    margin-bottom: 1rem;
+}
+
 .form input[type="submit"] {
+    margin-top: 2rem;
     font: var(--larger-font);
     border-radius: 6px;
-    margin-left: 4rem;
+    margin-left: 6rem;
+    height: 44px;
+}
+
+.form input[type="range"] {
+    height: 44px;
+}
+
+
+#rangevalues {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 6px;
+}
+
+#rangevalues option {
+    margin-top: 0;
+    flex: 1 1 auto;
+    justify-content: space-between;
+}
+
+.frange {
+    padding-left: 3rem;
 }
