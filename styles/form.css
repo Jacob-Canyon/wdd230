@@ -52,7 +52,7 @@ main {
     font-size: large;
 }
 
-.form input[type="text"],
+.form input[type=text],
 .form input[type="password"],
 .form input[type="email"] {
     display: block;

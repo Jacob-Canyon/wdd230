@@ -26,43 +26,75 @@
 <body>
     <div class="parent">
         <header>
+            <div>
+                <img class="logo" src="//via.placeholder.com/400x600/" alt="logo">
+            </div>
             <button id="hamButton">&#9776;</button>
+
             <nav class="menuLinks">
 
                 <a href="https://jacob-canyon.github.io/wdd230/chamber/index.html">Home</a>
                 <a href="https://jacob-canyon.github.io/wdd230/chamber/discover.html">Discover</a>
                 <a href="#">Directory</a>
-                <a href="#">Join</a>
+                <a href="https://jacob-canyon.github.io/wdd230/chamber/join.html">Join</a>
             </nav>
 
         </header>
 
+        <div class="membership">
+            <div>
+                <h2>Non profit</h2>
+                <p>For non profits the tempe chamber and provide</p>
+            </div>
+            <div>
+                <h2>Bronze Member</h2>
+            </div>
+            <div>
+                <h2>Silver Member</h2>
+            </div>
+            <div>
+                <h2>Gold Member</h2>
+            </div>
 
-        <main>
-            <form method="get" action="thank.html">
+        </div>
+
+
+        <main class="join-main">
+            <form method="get" action="thank.html" class="join">
                 <fieldset>
                     <legend>Application Information</legend>
-                    <label>First Name*<input type="text" name="fname" id="fname"></label>
+                    <label>First Name*<input type="text" name="fname" id="fname" required></label>
                     <label>Last Name*<input type="text" name="lname" id="lname" required></label>
-                    <label>Title or position<input type="text" name="title" id="title"></label>
+                    <label>Title or position<input type="text" name="title" id="title" pattern="[a-zA-Z0-9]\s-"></label>
                     <label>Email<input type="email" name="email" id="email"></label>
 
                 </fieldset>
                 <fieldset>
                     <legend>Membership</legend>
-                    <label>NP Membership<input type="radio" name="membership" id="npmember"></label>
-                    <label>NP Membership<input type="radio" name="membership" id="npmember"></label>
-                    <label>NP Membership<input type="radio" name="membership" id="npmember"></label>
+                    <label class="radio">Non Pofit Membership<input type="radio" name="membership"
+                            id="npmember"></label>
+                    <label class="radio">Bronze Membership<input type="radio" name="membership"
+                            id="bronzeMember"></label>
+                    <label class="radio">Silver Membership<input type="radio" name="membership"
+                            id="silverMember"></label>
+                    <label class="radio">Gold Membership<input type="radio" name="membership" id="goldMember"></label>
                 </fieldset>
                 <fieldset>
+                    <label>Business/Organization's Description<input type="text" name="description"
+                            id="description"></label>
                     <input type="hidden" name="timestamp" value="12-26-2024">
                 </fieldset>
+
+
 
                 <input type="submit" value="join">
             </form>
 
-
         </main>
+
+        <div class="right">
+
+        </div>
 
         <footer>
 

@@ -20,6 +20,8 @@ body {
 
 p {
     font-family: var(--smaller-font);
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 .parent {
@@ -30,14 +32,16 @@ p {
 
 .logo {
     height: 150px;
+    margin-bottom: 2rem;
+
 }
 
 
 header {
+    display: block;
     background-color: var(--primary-color);
     width: 100%;
     grid-column: 1/4;
-    justify-items: center;
 
 }
 
@@ -173,10 +177,85 @@ footer {
     width: 100%;
 }
 
-img {
+.sidebar-content {
+
+    margin-top: 1rem;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid var(--secondary-color);
     width: 100%;
     height: auto;
-    max-width: 340px;
+    max-width: 600px;
+}
+
+.discover-images {
+    width: 100%;
+    height: auto;
+    max-width: 360px;
 }
 
 /*--------join page------------*/
+
+.join-main {
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+.join label {
+    display: block;
+    margin: 2rem;
+    text-align: left;
+
+}
+
+.join input {
+    margin-top: .5rem;
+    height: 44px;
+
+}
+
+.join input[type="text"],
+.join input[type="email"] {
+    display: block;
+    box-shadow: 3px 4px #a57548;
+    border-radius: 6px;
+    width: 100%;
+}
+
+
+
+.join input[type="radio"] {
+    display: block;
+    accent-color: var(--primary-color);
+    height: 22px;
+    width: 22px;
+    margin-top: 8px;
+    font-size: .9rem;
+}
+
+.radio label {
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.375em;
+}
+
+.join input:required {
+    border-bottom: solid 4px red;
+}
+
+.join input:valid {
+    border-bottom: solid 4px green;
+}
+
+.join fieldset {
+    width: 100%;
+    max-width: 800px;
+}
+
+.join input[type=submit] {
+    width: 50%;
+}
