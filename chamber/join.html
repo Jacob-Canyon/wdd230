@@ -67,6 +67,9 @@
                     <label>Last Name*<input type="text" name="lname" id="lname" required></label>
                     <label>Title or position<input type="text" name="title" id="title" pattern="[a-zA-Z0-9]\s-"></label>
                     <label>Email<input type="email" name="email" id="email"></label>
+                    <label>Business/Organization's Description<input type="text" name="description"
+                            id="description"></label>
+                    <input type="hidden" name="timestamp" id="timestamp">
 
                 </fieldset>
                 <fieldset>
@@ -79,15 +82,9 @@
                             id="silverMember"></label>
                     <label class="radio">Gold Membership<input type="radio" name="membership" id="goldMember"></label>
                 </fieldset>
-                <fieldset>
-                    <label>Business/Organization's Description<input type="text" name="description"
-                            id="description"></label>
-                    <input type="hidden" name="timestamp" value="12-26-2024">
-                </fieldset>
 
+                <input type="submit" value="Join" id="join-button">
 
-
-                <input type="submit" value="join">
             </form>
 
         </main>
@@ -95,6 +92,7 @@
         <div class="right">
 
         </div>
+
 
         <footer>
 
