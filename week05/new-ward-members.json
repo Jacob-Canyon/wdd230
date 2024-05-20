@@ -1,0 +1,13 @@
+{
+    "familyName": "Smith",
+    "moveInDate": "12/25/2024",
+    "numberOfMemebers": 6,
+    "bishopricVisit": true,
+    "familyMembers": [
+        {
+            "name": "John",
+            "gender": "Male",
+            "birthdate": "09/15/1991"
+        }
+    ]
+}
