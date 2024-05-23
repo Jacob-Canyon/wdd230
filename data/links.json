@@ -1,0 +1,20 @@
+{
+    "weeks": [
+        {
+            "week01": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/"
+                }
+            ],
+            {
+                "week02": "week 2",
+                "links": []
+            }
+        ]
+    },
+}
