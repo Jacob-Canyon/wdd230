@@ -73,7 +73,7 @@ function displayResults(data) {
     let desc = data.weather[0].description;
     console.log(desec)
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('',);
+    weatherIcon.setAttribute('alt', "Weather Icon");
     captionDesc.textContent = `${desc}`;
 }
 apiFetch();
