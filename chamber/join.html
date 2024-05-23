@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body onload="setTime()">
     <div class="parent">
         <header>
             <div>
@@ -86,7 +86,7 @@
                     <Label>Business Name<input type="text" name="business" id="business"></Label>
                     <label>Business/Organization's Description<textarea name="description" id="description" rows="4"
                             cols="50"></textarea></label>
-                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="hidden" name="timestamp" id="timestamp" value="">
 
                 </fieldset>
                 <fieldset>

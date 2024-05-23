@@ -4,7 +4,9 @@ const hamButton = document.querySelector('#hamButton');
 
 const navElement = document.querySelector('.menuLinks');
 
-var today = new Date();
+
+
+
 
 document.querySelector('#lastModified').innerHTML = "Last Modified: " + document.lastModified;
 
@@ -12,8 +14,10 @@ hamButton.addEventListener('click', () => {
     navElement.classList.toggle('open');
 });
 
-document.getElementById('timeStamp').value = today;
-
+function setTime() {
+    var todaysDate = new Date();
+    document.querySelector('#timestamp').value = todaysDate;
+}
 
 
 
