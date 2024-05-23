@@ -71,7 +71,7 @@ function displayResults(data) {
     currenTemp.innerHTML = `${data.main.temp}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
-    console.log(desec)
+    console.log(desc)
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', "Weather Icon");
     captionDesc.textContent = `${desc}`;
