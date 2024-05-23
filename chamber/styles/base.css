@@ -216,7 +216,9 @@ footer {
 }
 
 .join input[type="text"],
-.join input[type="email"] {
+.join input[type="email"],
+.join input[type="tel"],
+.join textarea {
     display: block;
     box-shadow: 3px 4px var(--primary-color);
     border-radius: 6px;
