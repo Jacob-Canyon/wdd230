@@ -192,3 +192,8 @@ footer {
     content: "📍";
     /* just a wayfinding symbol for the user */
 }
+
+.weather {
+    text-align: center;
+    font-size: 2rem;
+}

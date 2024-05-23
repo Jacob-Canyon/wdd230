@@ -52,6 +52,15 @@
         padding-right: 2rem;
     }
 
+    .weather {
+        font-size: 4rem;
+    }
+
+    #weather-icon {
+        height: 4rem;
+        width: 4rem;
+    }
+
 
 
 
