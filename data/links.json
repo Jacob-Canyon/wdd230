@@ -1,20 +1,89 @@
 {
     "weeks": [
         {
-            "week01": "Week 1",
+            "week": "Week 1",
             "links": [
                 {
                     "url": "week01/holygrail.html",
                     "title": "HG Layout"
                 },
                 {
-                    "url": "week01/"
+                    "url": "week01/media-query.html",
+                    "title": "mQueries"
+                },
+                {
+                    "url": "week01/chamber-site-plan.html",
+                    "title": "Site Plan"
                 }
-            ],
-            {
-                "week02": "week 2",
-                "links": []
-            }
-        ]
-    },
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/bom.html",
+                    "title": "BOM"
+                },
+                {
+                    "url": "week02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "https://codepen.io/Jacob-Canyon/pen/JjVVyyw",
+                    "title": "Hamburger Menu"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/resized_image.webp",
+                    "title": "Image Format"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "BOM Enhanced"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Load"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/Jacob-Canyon/pen/dyEomKr",
+                    "title": "Pseudo Classes"
+                },
+                {
+                    "url": "images/week04.png",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "week04/tablebulid.html",
+                    "title": "Table"
+                },
+                {
+                    "url": "week04/form-start/Form-start/index.html",
+                    "title": "Form"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/Jacob-Canyon/pen/gOJPEdq",
+                    "title": "Pseudo Elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                }
+            ]
+        }
+    ]
 }
