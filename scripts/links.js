@@ -13,17 +13,34 @@ const displayLinks = (weeks) => {
     weeks.forEach((week) => {
         let activites = document.querySelector('#activities');
         let card = document.createElement('li');
-        let tile = document.createElement('span');
-        let link = document.createElement('a');
-
-        tile.textContent = `${week.tile}`
-        link.textContent = (link);
 
 
-        card.appendChild(tile);
-        card.appendChild(link);
+        card.textContent = `${week.week}: `
+        //link.textContent = ();
+
 
         activites.appendChild(card);
 
+        week.links.forEach((items) => {
+
+            let link = document.createElement('a');
+
+            console.log(items.title);
+
+            link.textContent = `${items.title} | `;
+
+            link.setAttribute("href", (items.url));
+
+
+
+            card.appendChild(link);
+
+
+        })
+
+
+
     });
 }
+
+getLinks();
