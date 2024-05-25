@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Tempe HVAC",
+            "address": "1034 baseline Rd",
+            "phone": "(555)123-7845",
+            "url": "www.tempehvac.com",
+            "logo": "//via.placeholder.com/400x600/",
+            "membership": "Sliver"
+        },
+        {
+            "name": "Moonlight Nursery",
+            "address": "2333 S rual Rd",
+            "phone": "(555)124-4578",
+            "url": "wwww.moonlightnursery",
+            "logo": "//via.placeholder.com/400x600/",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Sweet Heat BBQ",
+            "address": "35698 W Apolllo Ave",
+            "phone": "(555)324-5233",
+            "url": "www.sweetheatbbq",
+            "logo": "//via.placeholder.com/400x600/",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Tempe Golf Club",
+            "address": "418750 S center St",
+            "phone": "(555)864-9876",
+            "url": "www.tempegolfclub.com",
+            "logo": "//via.placeholder.com/400x600/",
+            "membership": "Gold"
+        },
+        {
+            "name": "Wendy's Constrution",
+            "address": "475 7th ave",
+            "phone": "(555)787-3486",
+            "url": "www.wendysconstrution.com",
+            "logo": "//via.placeholder.com/400x600/",
+            "membership": "Gold"
+        },
+        {
+            "name": "Bonnie's Frybread house",
+            "address": "14257 Easy St",
+            "phone": "(555)227-2238",
+            "url": "www.bonniesfrybreadhouse.com",
+            "logo": "//via.placeholder.com/400x600/",
+            "membership": "Sliver"
+        },
+        {
+            "name": "JJ's Unlimited",
+            "address": "4578 Baker St",
+            "phone": "(555)124-7659",
+            "url": "www.jjsunlimited.com",
+            "logo": "//via.placeholder.com/400x600/",
+            "membership": "Gold"
+        }
+    ]
+}

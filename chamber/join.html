@@ -35,7 +35,7 @@
 
                 <a href="https://jacob-canyon.github.io/wdd230/chamber/index.html">Home</a>
                 <a href="https://jacob-canyon.github.io/wdd230/chamber/discover.html">Discover</a>
-                <a href="#">Directory</a>
+                <a href="https://jacob-canyon.github.io/wdd230/chamber/directory.html">Directory</a>
                 <a href="https://jacob-canyon.github.io/wdd230/chamber/join.html">Join</a>
             </nav>
 
@@ -80,10 +80,12 @@
                     <legend>Application Information</legend>
                     <label>First Name*<input type="text" name="fname" id="fname" required></label>
                     <label>Last Name*<input type="text" name="lname" id="lname" required></label>
-                    <label>Title or position<input type="text" name="title" id="title" pattern="[a-zA-Z0-9]\s-"></label>
-                    <label>Email<input type="email" name="email" id="email"></label>
-                    <Label>Phone Number<input type="tel" name="phone" id="phone"></Label>
-                    <Label>Business Name<input type="text" name="business" id="business"></Label>
+                    <label>Title or position<input type="text" name="title" id="title"
+                            pattern="[a-zA-Z0-9]\s-{7,}"></label>
+                    <label>Email<input type="email" name="email" id="email" placeholder="youremail@email.com"
+                            required></label>
+                    <Label>Phone Number<input type="tel" name="phone" id="phone" required></Label>
+                    <Label>Business Name<input type="text" name="business" id="business" required></Label>
                     <label>Business/Organization's Description<textarea name="description" id="description" rows="4"
                             cols="50"></textarea></label>
                     <input type="hidden" name="timestamp" id="timestamp" value="">
