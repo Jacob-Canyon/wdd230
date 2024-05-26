@@ -71,3 +71,60 @@ function displayDaysSinceLastVisit() {
 
 }
 
+/*----------------------directory---------------------*/
+
+const baseURL = "https://jacob-canyon.github.io/wdd230/";
+
+const linksURL = "https://jacob-canyon.github.io/wdd230/chamber/data/members.json";
+
+async function getCards() {
+    const response = await fetch(linksURL);
+    const data = await response.json();
+    console.log(data);
+    displayMembers(data.members);
+
+}
+
+
+const displayMembers = (members) => {
+    members.forEach(member => {
+
+        let cards = document.querySelector(".cards");
+        let card = document.createElement('section');
+
+        let businessLogo = document.createElement('img')
+        let businessName = document.createElement('p');
+        let businessAddress = document.createElement('p');
+        let businessPhone = document.createElement('p');
+        let businessURl = document.createElement('p');
+
+
+        businessLogo.setAttribute('src', member.logo);
+        businessLogo.setAttribute('alt', member.name);
+        businessLogo.setAttribute('loading', 'lazy');
+        businessLogo.setAttribute('width', '400');
+        businessLogo.setAttribute('height', '400');
+
+        businessName.textContent = member.name;
+        businessAddress.textContent = member.address;
+        businessPhone.textContent = member.phone;
+        businessURl.textContent = member.url;
+
+        card.appendChild(businessLogo);
+        card.appendChild(businessName);
+        card.appendChild(businessAddress);
+        card.appendChild(businessPhone);
+        card.appendChild(businessURl);
+
+
+        cards.appendChild(card);
+
+    });
+
+
+
+
+
+}
+
+
