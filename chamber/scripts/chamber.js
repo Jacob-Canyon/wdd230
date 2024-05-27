@@ -216,11 +216,70 @@ async function getSpotlight() {
 
 
 function displaySpotlight(members) {
+
+    let spotlightList = [];
     members.forEach(member => {
-        if (member.membership == "Gold" || member.membership == "Silver") {
-            console.log(member.name);
+
+
+        if (member.membership == "Gold") {
+            spotlightList.push(member)
+
         }
+
+        if (member.membership == "Silver") {
+            spotlightList.push(member)
+        }
+
     })
+    console.log(spotlightList);
+
+    const scrambled = spotlightList.sort(() => Math.random() - 0.5);
+
+    console.log(scrambled[0]);
+    console.log(scrambled[1]);
+
+    createSpotlight(scrambled[0]);
+    createSpotlight(scrambled[1]);
+}
+
+function createSpotlight(member) {
+
+    let spotlight = document.querySelector('.spotlight');
+    let sec = document.createElement('section');
+
+    let businessLogo = document.createElement('img')
+    let businessName = document.createElement('p');
+    let businessAddress = document.createElement('p');
+    let businessPhone = document.createElement('p');
+    let businessURl = document.createElement('a');
+
+
+    businessLogo.setAttribute('src', member.logo);
+    businessLogo.setAttribute('alt', member.name);
+    businessLogo.setAttribute('loading', 'lazy');
+    businessLogo.setAttribute('width', '400');
+    businessLogo.setAttribute('height', '400');
+
+    businessURl.setAttribute('href', member.url);
+
+
+    businessName.textContent = member.name;
+    businessAddress.textContent = member.address;
+    businessPhone.textContent = member.phone;
+    businessURl.textContent = member.url;
+
+
+    sec.appendChild(businessLogo);
+    sec.appendChild(businessName);
+    sec.appendChild(businessAddress);
+    sec.appendChild(businessPhone);
+    sec.appendChild(businessURl);
+
+
+    spotlight.appendChild(sec);
+
+
+
 }
 
 getSpotlight();
