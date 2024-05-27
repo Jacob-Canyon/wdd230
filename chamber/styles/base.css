@@ -75,7 +75,7 @@ header {
     margin-bottom: 1rem;
 }
 
-a {
+nav a {
     font-size: 2rem;
     font-weight: bold;
     background-color: var(--accent1-color);
@@ -283,4 +283,40 @@ footer {
     text-align: left;
     margin-top: .5rem;
     margin-left: 1rem;
+}
+
+/*------------------------*/
+
+.cards {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 8px;
+    align-items: center;
+    max-width: 100%;
+}
+
+.list a {
+    font-family: var(--larger-font);
+    background-color: var(--accent2-color);
+}
+
+.list {
+    display: block;
+    font-size: 1.5rem;
+    max-width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.list section img {
+    display: none;
+}
+
+.list section {
+
+    margin-top: 1rem;
+    background-color: var(--accent2-color);
 }

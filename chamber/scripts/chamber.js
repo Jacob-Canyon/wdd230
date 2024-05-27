@@ -96,7 +96,7 @@ const displayMembers = (members) => {
         let businessName = document.createElement('p');
         let businessAddress = document.createElement('p');
         let businessPhone = document.createElement('p');
-        let businessURl = document.createElement('p');
+        let businessURl = document.createElement('a');
 
 
         businessLogo.setAttribute('src', member.logo);
@@ -105,10 +105,14 @@ const displayMembers = (members) => {
         businessLogo.setAttribute('width', '400');
         businessLogo.setAttribute('height', '400');
 
+        businessURl.setAttribute('href', member.url);
+
+
         businessName.textContent = member.name;
         businessAddress.textContent = member.address;
         businessPhone.textContent = member.phone;
         businessURl.textContent = member.url;
+
 
         card.appendChild(businessLogo);
         card.appendChild(businessName);
@@ -122,9 +126,26 @@ const displayMembers = (members) => {
     });
 
 
-
-
-
 }
+
+const gridButton = document.querySelector('#grid');
+const listButton = document.querySelector('#list');
+const display = document.querySelector('article');
+
+
+gridButton.addEventListener('click', () => {
+    display.classList.add("cards");
+    display.classList.remove("list");
+});
+
+listButton.addEventListener('click', showList);
+
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("cards");
+}
+
+
 
 
