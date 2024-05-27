@@ -82,6 +82,7 @@ async function getCards() {
     const data = await response.json();
     console.log(data);
     displayMembers(data.members);
+    displaySpotlight(data.members);
 
 }
 
@@ -168,8 +169,11 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 
+6
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.4&lon=-111.964&appid=af351d0e3cc9bbcf84b4f43842193c46&units=imperial';
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.4&lon=-111.964&appid=af351d0e3cc9bbcf84b4f43842193c46&units=imperial'
+
+
 
 
 async function apiFetch() {
@@ -198,5 +202,31 @@ function displayResults(data) {
     captionDesc.textContent = `${desc}`;
 }
 apiFetch();
+
+
+async function getSpotlight() {
+    const response = await fetch(linksURL);
+    const data = await response.json();
+    console.log(data);
+    displaySpotlight(data.members);
+
+}
+
+
+
+
+function displaySpotlight(members) {
+    members.forEach(member => {
+        if (member.membership == "Gold" || member.membership == "Silver") {
+            console.log(member.name);
+        }
+    })
+}
+
+getSpotlight();
+
+
+
+
 
 
