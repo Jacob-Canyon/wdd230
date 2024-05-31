@@ -320,3 +320,27 @@ footer {
     margin-top: 1rem;
     background-color: var(--accent2-color);
 }
+
+.forecast span {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.forecast {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*-------------------banner---------------------*/
+
+div.banner.open {
+    display: none;
+}
+
+div.banner {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background-color: var(--accent1-color);
+    font-size: 2rem;
+}

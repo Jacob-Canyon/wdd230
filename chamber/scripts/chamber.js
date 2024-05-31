@@ -169,8 +169,9 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 
-6
+
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.4&lon=-111.964&appid=af351d0e3cc9bbcf84b4f43842193c46&units=imperial';
+const url2 = 'https://api.openweathermap.org/data/2.5/forecast?lat=33.4&lon=-111.964&appid=af351d0e3cc9bbcf84b4f43842193c46&units=imperial';
 
 
 
@@ -283,6 +284,77 @@ function createSpotlight(member) {
 }
 
 getSpotlight();
+
+/*_______________forecast----------------*/
+
+
+
+async function apiForecast() {
+    try {
+        const forecast = await fetch(url2);
+        if (forecast.ok) {
+            const weather = await forecast.json();
+            console.log(weather);
+            displayForecast(weather);
+        } else {
+            throw Error(await forecast.text());
+        }
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function displayForecast(weather) {
+    let forecast = document.querySelector('.forecast');
+    let day1 = document.createElement('span');
+    let day2 = document.createElement('span');
+    let day3 = document.createElement('span');
+
+    day1.innerHTML = `${weather.list[3].main.temp}&deg;F`;
+    day2.innerHTML = `${weather.list[3].main.temp}&deg;F`;
+    day3.innerHTML = `${weather.list[3].main.temp}&deg;F`;
+
+    forecast.appendChild(day1)
+    forecast.appendChild(day2)
+    forecast.appendChild(day3)
+}
+
+
+apiForecast();
+
+
+/*------------banner---------------*/
+
+
+const bannerButton = document.querySelector('#bannerButton');
+const banner = document.querySelector('.banner');
+
+bannerButton.addEventListener('click', closeBanner);
+
+function closeBanner() {
+    banner.classList.toggle('open');
+}
+
+
+function dayCheck() {
+    const d = new Date();
+    let day = d.getDay();
+    console.log(day);
+
+    if (day >= 4) {
+        closeBanner()
+    }
+
+    if (day == 0) {
+        closeBanner()
+    }
+}
+
+dayCheck();
+
+
+
 
 
 
