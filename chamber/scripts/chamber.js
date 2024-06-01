@@ -4,14 +4,14 @@ const hamButton = document.querySelector('#hamButton');
 
 const navElement = document.querySelector('.menuLinks');
 
-
-
+const logo = document.querySelector('.logo');
 
 
 document.querySelector('#lastModified').innerHTML = "Last Modified: " + document.lastModified;
 
 hamButton.addEventListener('click', () => {
     navElement.classList.toggle('open');
+    logo.classList.toggle('open');
 });
 
 function setTime() {

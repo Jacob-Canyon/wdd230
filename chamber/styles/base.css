@@ -32,7 +32,8 @@ p {
 
 .logo {
     height: 150px;
-    margin-bottom: 2rem;
+
+
 
 }
 
@@ -68,12 +69,14 @@ header {
 }
 
 #hamButton {
+    margin-top: 1rem;
     font-size: 2rem;
     background-color: var(--primary-color);
     cursor: pointer;
     width: 4rem;
     margin-bottom: 1rem;
 }
+
 
 nav a {
     font-size: 2rem;
@@ -98,6 +101,10 @@ nav.menuLinks {
 
 nav.menuLinks.open {
     display: block;
+}
+
+.logo.open {
+    display: none;
 }
 
 nav {
