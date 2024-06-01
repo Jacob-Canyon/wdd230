@@ -283,12 +283,16 @@ footer {
 
 .membership {
     max-width: 600px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding: .5rem;
+    border: 2px solid black;
 
 }
 
 .membership p {
     text-align: left;
-    margin-top: .5rem;
+    margin-top: 1rem;
     margin-left: 1rem;
 }
 
@@ -346,8 +350,10 @@ div.banner.open {
 
 div.banner {
     position: absolute;
-    height: 200px;
+    height: 400px;
     width: 100%;
     background-color: var(--accent1-color);
-    font-size: 2rem;
+    font-size: 3rem;
+    top: 15%;
+
 }

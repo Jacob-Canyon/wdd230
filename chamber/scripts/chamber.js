@@ -157,10 +157,6 @@ const displayMembers = (members) => {
 
 
 
-
-
-
-
 /*------------------weather---------------------*/
 
 
