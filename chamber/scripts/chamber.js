@@ -50,7 +50,6 @@ function displayDaysSinceLastVisit() {
 
         const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
 
-        console.log(differenceInDays);
 
 
         if (differenceInDays > 1) {
@@ -85,7 +84,6 @@ const linksURL = "https://jacob-canyon.github.io/wdd230/chamber/data/members.jso
 async function getCards() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data);
     displayMembers(data.members);
 
 }
@@ -181,7 +179,6 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -198,7 +195,6 @@ function displayResults(data) {
     currenTemp.innerHTML = `${data.main.temp}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
-    console.log(desc)
     icon.setAttribute('src', iconsrc);
     icon.setAttribute('alt', "Weather Icon");
     weatherIcon.appendChild(icon);
@@ -209,7 +205,6 @@ function displayResults(data) {
 async function getSpotlight() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data);
     displaySpotlight(data.members);
 
 }
@@ -233,7 +228,6 @@ function displaySpotlight(members) {
         }
 
     })
-    console.log(spotlightList);
 
     const scrambled = spotlightList.sort(() => Math.random() - 0.5);
 
@@ -302,7 +296,6 @@ async function apiForecast() {
         const forecast = await fetch(url2);
         if (forecast.ok) {
             const weather = await forecast.json();
-            console.log(weather);
             displayForecast(weather);
         } else {
             throw Error(await forecast.text());
@@ -348,7 +341,6 @@ function banner() {
     function dayCheck() {
         const d = new Date();
         let day = d.getDay();
-        console.log(day);
 
         if (day >= 4) {
             closeBanner()
