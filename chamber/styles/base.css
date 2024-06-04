@@ -203,10 +203,16 @@ footer {
     max-width: 360px;
 }
 
+.main-content {
+    text-align: center;
+}
+
 #h1discover {
-    text-align: left;
+    text-align: center;
     width: 100%;
+    max-width: 900px;
     height: auto;
+    left: 30%;
 }
 
 /*--------join page------------*/
