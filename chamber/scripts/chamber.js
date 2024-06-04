@@ -87,7 +87,6 @@ async function getCards() {
     const data = await response.json();
     console.log(data);
     displayMembers(data.members);
-    displaySpotlight(data.members);
 
 }
 
@@ -205,7 +204,6 @@ function displayResults(data) {
     weatherIcon.appendChild(icon);
     captionDesc.textContent = `${desc}`;
 }
-apiFetch();
 
 
 async function getSpotlight() {
@@ -286,7 +284,14 @@ function createSpotlight(member) {
 
 }
 
-getSpotlight();
+
+
+function indexJS() {
+    apiFetch();
+    getSpotlight();
+    apiForecast();
+    banner();
+}
 
 /*_______________forecast----------------*/
 
@@ -324,37 +329,41 @@ function displayForecast(weather) {
 }
 
 
-apiForecast();
-
 
 /*------------banner---------------*/
 
-
-const bannerButton = document.querySelector('#bannerButton');
-const banner = document.querySelector('.banner');
-
-bannerButton.addEventListener('click', closeBanner);
-
-function closeBanner() {
-    banner.classList.toggle('open');
-}
+function banner() {
 
 
-function dayCheck() {
-    const d = new Date();
-    let day = d.getDay();
-    console.log(day);
+    const bannerButton = document.querySelector('#bannerButton');
+    const banner = document.querySelector('.banner');
 
-    if (day >= 4) {
-        closeBanner()
+    bannerButton.addEventListener('click', closeBanner);
+
+    function closeBanner() {
+        banner.classList.toggle('open');
     }
 
-    if (day == 0) {
-        closeBanner()
-    }
-}
 
-dayCheck();
+    function dayCheck() {
+        const d = new Date();
+        let day = d.getDay();
+        console.log(day);
+
+        if (day >= 4) {
+            closeBanner()
+        }
+
+        if (day == 0) {
+            closeBanner()
+        }
+    }
+
+    dayCheck();
+
+};
+
+
 
 
 
