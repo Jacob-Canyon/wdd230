@@ -19,6 +19,11 @@ function setTime() {
     document.querySelector('#timestamp').value = todaysDate;
 }
 
+/*--------------- join button ------------------*/
+
+
+
+
 
 
 /* Days since last visit */
@@ -161,7 +166,6 @@ const displayMembers = (members) => {
 
 
 const currenTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 
@@ -190,12 +194,15 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
+    const icon = document.createElement('img');
+    const weatherIcon = document.querySelector('#icon')
     currenTemp.innerHTML = `${data.main.temp}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     console.log(desc)
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', "Weather Icon");
+    icon.setAttribute('src', iconsrc);
+    icon.setAttribute('alt', "Weather Icon");
+    weatherIcon.appendChild(icon);
     captionDesc.textContent = `${desc}`;
 }
 apiFetch();
