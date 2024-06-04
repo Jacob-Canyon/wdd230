@@ -120,6 +120,10 @@ nav {
     margin: auto;
 }
 
+header {
+    margin-top: 1rem;
+}
+
 main {
     margin: 1rem;
     padding: 2rem;
@@ -207,13 +211,6 @@ footer {
     text-align: center;
 }
 
-#h1discover {
-    text-align: center;
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    left: 30%;
-}
 
 /*--------join page------------*/
 
